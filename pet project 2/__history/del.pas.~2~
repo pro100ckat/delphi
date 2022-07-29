@@ -1,0 +1,36 @@
+unit del;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  Tydal = class(TForm)
+    ComboBox1: TComboBox;
+    BitBtn1: TBitBtn;
+    Label1: TLabel;
+    procedure BitBtn1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ydal: Tydal;
+
+implementation
+uses main;
+
+{$R *.dfm}
+
+procedure Tydal.BitBtn1Click(Sender: TObject);
+var i:integer;
+begin
+for I := 1 to n do
+combobox1.Items.Add(form1.strlist(i));
+end;
+
+end.

@@ -1,0 +1,55 @@
+unit Delete_t;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TForm4 = class(TForm)
+    Label1: TLabel;
+    Edit1: TEdit;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    procedure Edit1KeyPress(Sender: TObject; var Key: Char);
+    procedure BitBtn2Click(Sender: TObject);
+    procedure BitBtn1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form4: TForm4;
+
+implementation
+uses procedures;
+
+{$R *.dfm}
+
+procedure TForm4.BitBtn1Click(Sender: TObject);
+begin
+edit1.Text:='0';
+Close;
+end;
+
+procedure TForm4.BitBtn2Click(Sender: TObject);
+begin
+delete_tm;
+clean_grid;
+print_mas;
+end;
+
+procedure TForm4.Edit1KeyPress(Sender: TObject; var Key: Char);
+begin
+if(Key in ['0'..'9']) or(Key = ',') or(Key = #8) then begin
+if(Edit1.Text = '') and (Key = ',') then Key:=#0;
+if(Edit1.Text = '0') and (Key <> ',') and (Key <> #8) then Key:=#0;
+if(Key = ',')  then Key:=#0;
+end
+else Key:=#0;
+end;
+
+end.

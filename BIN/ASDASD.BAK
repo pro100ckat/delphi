@@ -1,0 +1,50 @@
+program z1;
+ uses crt;
+ var f:file of real;
+ n,i,k,l:integer; a,max:real;
+ begin
+ clrscr;
+ assign(f,'asd.txt');
+ rewrite(f);
+ writeln('vvedi kol-vo chisel ');
+ readln(n);
+ for i:=1 to n do begin
+ readln(a);
+ write(f,a);
+ end;
+ close(f);
+ reset(f);
+ while not eof(f) do begin
+ read(f,a);
+ write(a:4:2, ' ');
+ end;
+ close(f);
+ reset(f);
+ i:=0;
+ l:=0;
+ while not eof(f) do begin
+ read(f,a);
+ if a>0 then l:=l+1;
+ if (i=0) or (a>max) then  begin
+ max:=a;
+ k:=i;
+ end;
+ i:=i+1;
+ end;
+ close(f);
+ writeln;
+ writeln('max = ',max:4:2);
+ writeln('NEW FILE');
+ reset(f);
+ seek(f,filesize(f));
+ for i:=1 to l do
+ write(f,max);
+close(f);
+             reset(f);
+ while not eof(f) do begin
+ read(f,a);
+ write(a:4:2, ' ');
+ end;
+ close(F);
+ readkey;
+ end.

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.240,C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Delete_t.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Delete.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.569,=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Unit4.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.825,=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.868,C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Unit2.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\addnew.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.193,C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Unit1.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\procedures.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.868,C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Unit2.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\addnew.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.240,C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Delete_t.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Delete.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.870,=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.140,=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Unit4.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.341,C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Unit4.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\del.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.536,C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Unit3.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\redact.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.274,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit5.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Main.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.319,=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.275,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit5.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.629,C:\Users\User\Documents\Embarcadero\Studio\Projects\Project4.dproj=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\kurs.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.341,C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Unit4.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\del.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.122,C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Delete.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Unit4.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.536,C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Unit3.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\redact.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.175,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit5.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.122,C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Delete.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\kurs2\Unit4.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,108 @@
+Program z1;
+uses crt;
+type plist=^list;
+list = record
+key:real;
+next:plist;
+end;
+
+procedure addhead(var head:plist; x:real);
+var p:plist;
+begin
+new(p);
+read(x);
+p^.key:=x;
+p^.next:=head;
+head:=p;
+end;
+
+
+procedure display(head:plist);
+var p:plist;
+begin
+p:=head;
+while p<>nil do begin
+write(p^.key:4:1,' ');
+p:=p^.next;
+end;
+end;
+
+
+function delhead(var head:plist):real;
+var p:plist; x:integer;
+begin
+p:=head;
+head:=p^.next;
+delhead:=p^.key;
+dispose(p);
+end;
+
+procedure delall( var head:plist);
+var p:plist; x:integer;
+begin
+while head<> nil do
+delhead(head);
+end;
+
+function delval(var head:plist; x:integer):boolean;
+var p,pp:plist;
+begin
+p:=head;
+if (p<>nil) then
+if (p^.key=x) then begin
+pp:=head;
+head:=head^.next
+end
+else begin
+while (p^.next<>nil) and (p^.next^.key<>x) do
+p:=p^.next;
+if (p^.next<>nil) then
+begin
+pp:=p^.next;
+p^.next:=p^.next^.next;
+dispose(pp); delval:=true;
+end
+else delval:=false end
+else delval:=false
+end;
+
+procedure proizved(var head:plist);
+var p:plist; max,min:real; przvdn:real;
+begin
+przvdn:=0;
+p:=head; max:=p^.key;
+while p<>nil do begin
+if p^.key>max then
+max:=p^.key;
+p:=p^.next;
+end;
+p:=head; min:=p^.key;
+while p<> nil do begin
+if p^.key<min then
+min:=p^.key;
+p:=p^.next;
+end;
+przvdn:=min*max;
+writeln('min*max = ', przvdn:4:1);
+new(p);
+p^.key:=przvdn;
+p^.next:=head;
+head:=p;
+end;
+
+var head:plist;     i:integer;
+    begin
+    clrscr;
+head:=nil;
+writeln('vvedi spisok ');
+for i:=1 to 5 do
+addhead(head,i);
+display(head);
+writeln;
+proizved(head);
+writeln;
+display(head);
+writeln;
+delall(head);
+readkey;
+end.
